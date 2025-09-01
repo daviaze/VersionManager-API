@@ -11,7 +11,7 @@ namespace VersionManager.Infra.DependencyInjection
             return services
             .AddDbContext<VersionContext>((sp, opt) =>
             {
-                opt.UseInMemoryDatabase("ProjectManager");
+                opt.UseInMemoryDatabase("VersionManager");
             });
         }
     }
