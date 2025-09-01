@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MyProjects\\VersionManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|d:\\myprojects\\versionmanager\\versionmanager.domain\\entities\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|solutionrelative:versionmanager.domain\\entities\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|d:\\myprojects\\versionmanager\\versionmanager.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|solutionrelative:versionmanager.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|d:\\myprojects\\versionmanager\\versionmanager.domain\\entities\\launch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|solutionrelative:versionmanager.domain\\entities\\launch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|d:\\myprojects\\versionmanager\\versionmanager.domain\\entities\\system.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6620B207-10F4-4BEA-8A5B-352B8264D9A4}|VersionManager.Domain\\VersionManager.Domain.csproj|solutionrelative:versionmanager.domain\\entities\\system.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D66604-0079-4336-9545-456BB76FD775}|VersionManager.Infra\\VersionManager.Infra.csproj|d:\\myprojects\\versionmanager\\versionmanager.infra\\dependencyinjection\\infraconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23D66604-0079-4336-9545-456BB76FD775}|VersionManager.Infra\\VersionManager.Infra.csproj|solutionrelative:versionmanager.infra\\dependencyinjection\\infraconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D66604-0079-4336-9545-456BB76FD775}|VersionManager.Infra\\VersionManager.Infra.csproj|d:\\myprojects\\versionmanager\\versionmanager.infra\\context\\versioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23D66604-0079-4336-9545-456BB76FD775}|VersionManager.Infra\\VersionManager.Infra.csproj|solutionrelative:versionmanager.infra\\context\\versioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Contract.cs",
+              "RelativeDocumentMoniker": "VersionManager.Domain\\Entities\\Contract.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Contract.cs",
+              "RelativeToolTip": "VersionManager.Domain\\Entities\\Contract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:08:26.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "VersionManager.Domain\\Entities\\Customer.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "VersionManager.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:08:24.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Launch.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Launch.cs",
+              "RelativeDocumentMoniker": "VersionManager.Domain\\Entities\\Launch.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\Launch.cs",
+              "RelativeToolTip": "VersionManager.Domain\\Entities\\Launch.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBEAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:08:13.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "System.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\System.cs",
+              "RelativeDocumentMoniker": "VersionManager.Domain\\Entities\\System.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Domain\\Entities\\System.cs",
+              "RelativeToolTip": "VersionManager.Domain\\Entities\\System.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:08:10.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VersionContext.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Infra\\Context\\VersionContext.cs",
+              "RelativeDocumentMoniker": "VersionManager.Infra\\Context\\VersionContext.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Infra\\Context\\VersionContext.cs",
+              "RelativeToolTip": "VersionManager.Infra\\Context\\VersionContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:07:12.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfraConfiguration.cs",
+              "DocumentMoniker": "D:\\MyProjects\\VersionManager\\VersionManager.Infra\\DependencyInjection\\InfraConfiguration.cs",
+              "RelativeDocumentMoniker": "VersionManager.Infra\\DependencyInjection\\InfraConfiguration.cs",
+              "ToolTip": "D:\\MyProjects\\VersionManager\\VersionManager.Infra\\DependencyInjection\\InfraConfiguration.cs",
+              "RelativeToolTip": "VersionManager.Infra\\DependencyInjection\\InfraConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T20:03:48.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

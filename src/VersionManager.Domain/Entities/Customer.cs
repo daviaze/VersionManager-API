@@ -7,6 +7,7 @@ namespace VersionManager.Domain.Entities
         public string Name { get; private set; } = string.Empty;
         public string Document { get; private set; } = string.Empty;
         public string Email { get; private set; } = string.Empty;
+        public ICollection<Contract> Contracts { get; private set; } = [];
 
         public static Customer Create(string name, string document, string email)
         {

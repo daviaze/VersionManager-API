@@ -12,7 +12,8 @@ namespace VersionManager.Domain.Entities.VersionAggregate
         public virtual AmbientVersion AmbientVersion { get; protected set; }
         public Guid SystemId { get; protected init; }
         public System? System { get; protected set; }
-        public List<BugReport> BugReports { get; protected set; } = [];
+        public ICollection<BugReport> BugReports { get; protected set; } = [];
+        public ICollection<Launch> Launchs { get; protected set; } = [];
 
         public void AddReportBug(string description)
         {
