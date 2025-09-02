@@ -5,11 +5,11 @@ namespace VersionManager.Domain.Entities.VersionAggregate
     public sealed class ApprovalVersion : VersionBase
     {
         public override AmbientVersion AmbientVersion => AmbientVersion.approval;
-        public static ApprovalVersion Create(Guid id, string name, string description)
+        public static ApprovalVersion Create(string name, string description)
         {
             return new ApprovalVersion
             {
-                Id = id,
+                Id = Guid.NewGuid(),
                 Name = name,
                 Description = description,
                 CreatedAt = DateTime.UtcNow,

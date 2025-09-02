@@ -14,6 +14,7 @@ namespace VersionManager.Domain.Entities.VersionAggregate
         public System? System { get; protected set; }
         public ICollection<BugReport> BugReports { get; protected set; } = [];
         public ICollection<Launch> Launchs { get; protected set; } = [];
+        public bool HasBugs => BugReports.Count != 0;
 
         public void AddReportBug(string description)
         {

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using VersionManager.Application.Dtos.Systems;
+using VersionManager.Application.Mappers;
 
 namespace VersionManager.Controllers
 {
@@ -28,6 +30,13 @@ namespace VersionManager.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] SystemCreateDto dto)
+        {
+            var system = dto.MapToSystem();
+            return Ok(system.MapToReadDto());
         }
     }
 }

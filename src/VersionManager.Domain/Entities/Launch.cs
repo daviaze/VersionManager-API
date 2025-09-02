@@ -15,7 +15,7 @@ namespace VersionManager.Domain.Entities
         public DateTime? UpdateAt { get; private set; }
 
         public static Launch Create(VersionBase version, ICollection<Contract> contracts,
-            string message, bool allowedForAllContracts = false, bool requiredAcceptance = false)
+            string message = "", bool allowedForAllContracts = false, bool requiredAcceptance = false)
         {
             if(!allowedForAllContracts && contracts.Count == 0)
             {
