@@ -2,7 +2,7 @@
 
 namespace VersionManager.Application.Dtos.Customers
 {
-    internal class CustomerCreateDto
+    public sealed record CustomerCreateDto
     {
         [Required(ErrorMessage = "Value name is required")]
         public string Name { get; init; } = string.Empty;

@@ -14,7 +14,7 @@ namespace VersionManager.Domain.Entities
         public DateTime CreatedAt { get; private init; }
         public DateTime? UpdateAt { get; private set; }
 
-        public static Launch Create(VersionBase version, ICollection<Contract> contracts,
+        public static Launch Create(Guid versionId, ICollection<Contract> contracts,
             string message = "", bool allowedForAllContracts = false, bool requiredAcceptance = false)
         {
             if(!allowedForAllContracts && contracts.Count == 0)
@@ -25,7 +25,7 @@ namespace VersionManager.Domain.Entities
             return new Launch
             {
                 Id = Guid.NewGuid(),
-                Version = version,
+                VersionId = versionId,
                 Contracts = !allowedForAllContracts ? contracts : [],
                 CreatedAt = DateTime.UtcNow,
                 Message = message,
