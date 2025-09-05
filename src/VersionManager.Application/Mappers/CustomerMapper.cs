@@ -13,7 +13,7 @@ namespace VersionManager.Application.Mappers
         [MapProperty(nameof(Customer.Document), nameof(CustomerReadDto.Document))]
         [MapperIgnoreSource(nameof(Customer.Contracts))]
         public static partial CustomerReadDto MapToReadDto(this Customer customer);
-        public static Customer MapToCustomer(this CustomerCreateDto customer)
+        public static Customer MapToEntity(this CustomerCreateDto customer)
             => Customer.Create(customer.Name, customer.Document, customer.Email);
     }
 }

@@ -12,7 +12,7 @@ namespace VersionManager.Application.Mappers
         [MapperIgnoreSource(nameof(Domain.Entities.System.Versions))]
         [MapperIgnoreSource(nameof(Domain.Entities.System.Contracts))]
         public static partial SystemReadDto MapToReadDto(this Domain.Entities.System system);
-        public static Domain.Entities.System MapToSystem(this SystemCreateDto system)
+        public static Domain.Entities.System MapToEntity(this SystemCreateDto system)
             => Domain.Entities.System.Create(system.Name, system.Description);
     }
 }

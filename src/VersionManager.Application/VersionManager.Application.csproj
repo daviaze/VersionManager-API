@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentResults" Version="4.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
     <PackageReference Include="Riok.Mapperly" Version="4.2.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\VersionManager.Domain\VersionManager.Domain.csproj" />
+    <ProjectReference Include="..\VersionManager.Infra\VersionManager.Infra.csproj" />
   </ItemGroup>
 
 </Project>

@@ -16,8 +16,8 @@ namespace VersionManager.Application.Mappers
         [MapperIgnoreSource(nameof(Launch.Version))]
         [MapperIgnoreSource(nameof(Launch.Contracts))]
         public static partial LaunchReadDto MapToReadDto(this Launch launch);
-        public static Launch MapToLaunch(this LaunchCreateDto launch, Guid idVersion)
-            => Launch.Create(idVersion, [.. launch.Contracts], launch.Message,
+        public static Launch MapToEntity(this LaunchCreateDto launch, Guid idVersion, IEnumerable<Contract> contracts)
+            => Launch.Create(idVersion, [.. contracts], launch.Message,
                 launch.AllowedForAllContracts, launch.RequiredAcceptance);
     }
 }

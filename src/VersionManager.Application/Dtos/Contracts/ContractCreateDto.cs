@@ -6,7 +6,7 @@ namespace VersionManager.Application.Dtos.Contracts
     public sealed record ContractCreateDto
     {
         [Required(ErrorMessage = "Value customers is required")]
-        public IEnumerable<Customer> Customers { get; init; } = [];
+        public IEnumerable<Guid> CustomerIds { get; init; } = [];
 
         [Required(ErrorMessage = "Value systems is required")]
         public IEnumerable<VersionManager.Domain.Entities.System> Systems { get; init; } = [];

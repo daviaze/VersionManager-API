@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using VersionManager.Infra.Context;
+using VersionManager.Infra.Repository;
+using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Infra.DependencyInjection
 {
@@ -12,7 +14,8 @@ namespace VersionManager.Infra.DependencyInjection
             .AddDbContext<VersionContext>((sp, opt) =>
             {
                 opt.UseInMemoryDatabase("VersionManager");
-            });
+            })
+            .AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }

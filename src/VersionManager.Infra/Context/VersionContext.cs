@@ -5,16 +5,15 @@ using VersionManager.Domain.Entities.VersionAggregate;
 
 namespace VersionManager.Infra.Context
 {
-    public sealed class VersionContext : DbContext
+    internal sealed class VersionContext : DbContext
     {
-        internal DbSet<VersionBase> Version => Set<VersionBase>();
-        internal DbSet<BugReport> BugReport => Set<BugReport>();
-        internal DbSet<VersionManager.Domain.Entities.System> System 
+        public DbSet<VersionBase> Version => Set<VersionBase>();
+        public DbSet<BugReport> BugReport => Set<BugReport>();
+        public DbSet<VersionManager.Domain.Entities.System> System 
             => Set<VersionManager.Domain.Entities.System>();
-        internal DbSet<Contract> Contract => Set<Contract>();
-        internal DbSet<Customer> Customer => Set<Customer>();
-        internal DbSet<Launch> Developer => Set<Launch>();
-
+        public DbSet<Contract> Contract => Set<Contract>();
+        public DbSet<Customer> Customer => Set<Customer>();
+        public DbSet<Launch> Launch => Set<Launch>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

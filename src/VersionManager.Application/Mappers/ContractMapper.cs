@@ -17,7 +17,7 @@ namespace VersionManager.Application.Mappers
         [MapperIgnoreSource(nameof(Contract.Systems))]
         [MapperIgnoreTarget(nameof(Contract.Systems))]
         public static partial ContractReadDto MapToReadDto(this Contract contract);
-        public static Contract MapToContract(this ContractCreateDto contract)
-            => Contract.Create([..contract.Customers], [..contract.Systems]);
+        public static Contract MapToEntity(this ContractCreateDto contract, IEnumerable<Customer> customers)
+            => Contract.Create([.. customers], [..contract.Systems]);
     }
 }

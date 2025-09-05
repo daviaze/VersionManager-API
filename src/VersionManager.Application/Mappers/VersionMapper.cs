@@ -17,7 +17,7 @@ namespace VersionManager.Application.Mappers
         [MapperIgnoreSource(nameof(VersionBase.Launchs))]
         [MapperIgnoreSource(nameof(VersionBase.BugReports))]
         public static partial VersionReadDto MapToReadDto(this VersionBase version);
-        public static VersionBase MapToSystem(this VersionCreateDto version)
-            => ApprovalVersion.Create(version.Name, version.Description);
+        public static VersionBase MapToEntity(this VersionCreateDto version, Guid systemId)
+            => ApprovalVersion.Create(systemId, version.Name, version.Description);
     }
 }
