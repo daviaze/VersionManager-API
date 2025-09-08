@@ -5,7 +5,7 @@ using VersionManager.Domain.Entities.VersionAggregate;
 
 namespace VersionManager.Infra.Context
 {
-    internal sealed class VersionContext : DbContext
+    internal sealed class VersionContext(DbContextOptions<VersionContext> options) : DbContext(options)
     {
         public DbSet<VersionBase> Version => Set<VersionBase>();
         public DbSet<BugReport> BugReport => Set<BugReport>();

@@ -6,7 +6,7 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Application.Services.Versions
 {
-    internal sealed class CreateVersionService(IUnitOfWork unitOfWork) : IService
+    public sealed class CreateVersionService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         

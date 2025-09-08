@@ -5,9 +5,9 @@ using VersionManager.Application.Services.Interfaces;
 using VersionManager.Domain.Entities;
 using VersionManager.Infra.Repository.Contracts;
 
-namespace VersionManager.Application.Services.Launch
+namespace VersionManager.Application.Services.Launchs
 {
-    internal sealed class CreateLaunchService(IUnitOfWork unitOfWork) : IService
+    public sealed class CreateLaunchService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
 

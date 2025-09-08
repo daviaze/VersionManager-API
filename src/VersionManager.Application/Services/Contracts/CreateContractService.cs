@@ -7,7 +7,7 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Application.Services.Contracts
 {
-    internal sealed class CreateContractService(IUnitOfWork unitOfWork) : IService
+    public sealed class CreateContractService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public async Task<Result<ContractReadDto>> ExecuteAsync(ContractCreateDto dto,

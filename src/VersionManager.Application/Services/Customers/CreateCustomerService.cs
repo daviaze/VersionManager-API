@@ -6,7 +6,7 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Application.Services.Customers
 {
-    internal sealed class CreateCustomerService(IUnitOfWork unitOfWork) : IService
+    public sealed class CreateCustomerService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public async Task<Result<CustomerReadDto>> ExecuteAsync(CustomerCreateDto dto, CancellationToken cancellationToken)

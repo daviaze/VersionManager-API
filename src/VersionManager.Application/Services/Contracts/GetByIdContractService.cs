@@ -6,7 +6,7 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Application.Services.Contracts
 {
-    internal sealed class GetByIdContractService(IUnitOfWork unitOfWork) : IService
+    public sealed class GetByIdContractService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public async Task<Result<ContractReadDto>> ExecuteAsync(Guid id, CancellationToken cancellationToken)

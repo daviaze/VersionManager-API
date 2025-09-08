@@ -6,7 +6,7 @@ namespace VersionManager.Application.DependencyInjection
 {
     public static class ApplicationConfiguration
     {
-        public static IServiceCollection ConfigureServices(IServiceCollection services)
+        public static IServiceCollection ConfigureServices(this IServiceCollection services)
         {
             var assembly = Assembly.GetExecutingAssembly();
 

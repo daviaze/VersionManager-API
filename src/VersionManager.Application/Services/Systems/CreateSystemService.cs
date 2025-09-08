@@ -6,7 +6,7 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Application.Services.Systems
 {
-    internal sealed class CreateSystemService(IUnitOfWork unitOfWork) : IService
+    public sealed class CreateSystemService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public async Task<Result<SystemReadDto>> ExecuteAsync(SystemCreateDto dto,

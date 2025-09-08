@@ -4,9 +4,9 @@ using VersionManager.Application.Mappers;
 using VersionManager.Application.Services.Interfaces;
 using VersionManager.Infra.Repository.Contracts;
 
-namespace VersionManager.Application.Services.Launch
+namespace VersionManager.Application.Services.Launchs
 {
-    internal sealed class GetByIdLaunchService(IUnitOfWork unitOfWork) : IService
+    public sealed class GetByIdLaunchService(IUnitOfWork unitOfWork) : IService
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public async Task<Result<LaunchReadDto>> ExecuteAsync(Guid idLaunch,

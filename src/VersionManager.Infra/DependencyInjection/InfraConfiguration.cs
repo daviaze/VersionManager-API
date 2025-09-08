@@ -6,9 +6,9 @@ using VersionManager.Infra.Repository.Contracts;
 
 namespace VersionManager.Infra.DependencyInjection
 {
-    public sealed class InfraConfiguration
+    public static class InfraConfiguration
     {
-        public static IServiceCollection ConfigureServices(IServiceCollection services)
+        public static IServiceCollection ConfigureInfra(this IServiceCollection services)
         {
             return services
             .AddDbContext<VersionContext>((sp, opt) =>
