@@ -16,7 +16,9 @@ namespace VersionManager.Infra.Repository
 
         public async Task<VersionBase?> GetByIdAsync(Guid id, CancellationToken cl)
         {
-            var version = await _context.Version.FirstOrDefaultAsync(v => v.Id == id, cl);
+            var version = await _context.Version
+                .Include(x => x.BugReports)
+                .FirstOrDefaultAsync(v => v.Id == id, cl);
             return version;
         }
     }

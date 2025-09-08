@@ -12,12 +12,13 @@ namespace VersionManager.Domain.Entities
         public Guid VersionId { get; private init; }
         public VersionBase? Version { get; private set; }
 
-        public static BugReport Create(string content)
+        public static BugReport Create(string content, Guid idVersion)
         {
             return new BugReport
             {
                 Id = Guid.NewGuid(),
                 Content = content,
+                VersionId = idVersion,
                 CreatedAt = DateTime.UtcNow
             };
         }

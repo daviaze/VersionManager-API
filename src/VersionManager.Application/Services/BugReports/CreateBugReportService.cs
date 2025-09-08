@@ -16,8 +16,9 @@ namespace VersionManager.Application.Services.BugReports
             if (version is null)
                 return Result.Fail("Version not found");
 
-            var report = version.AddReportBug(dto.Content);
+            var report = dto.MapToEntity(version.Id);
 
+            _unitOfWork.BugReportRepository.Create(report);
             await _unitOfWork.Commit(cl);
 
             return Result.Ok<BugReportReadDto>(report.MapToReadDto());

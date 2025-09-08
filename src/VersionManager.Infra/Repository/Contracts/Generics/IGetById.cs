@@ -1,4 +1,8 @@
-﻿namespace VersionManager.Infra.Repository.Contracts.Generics
+﻿
+
+using System.Linq.Expressions;
+
+namespace VersionManager.Infra.Repository.Contracts.Generics
 {
     public interface IGetById<T> where T : class
     {

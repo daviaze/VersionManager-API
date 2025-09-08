@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using FluentResults;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using VersionManager.Domain.Exceptions;
 
@@ -23,7 +24,7 @@ namespace VersionManager.ExceptionHandler
                 DomainOperationException) _logger.Error(exception,
                     "Exception caught in the GlobalExceptionHandler...");
 
-            var message = exception.InnerException?.Message ?? exception.Message;
+            var message = Result.Fail(exception.InnerException?.Message ?? exception.Message);
 
             await httpContext.Response.WriteAsJsonAsync(message, cancellationToken);
 

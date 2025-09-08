@@ -16,11 +16,10 @@ namespace VersionManager.Domain.Entities.VersionAggregate
         public ICollection<Launch> Launchs { get; protected set; } = [];
         public bool HasBugs => BugReports.Count != 0;
 
-        public BugReport AddReportBug(string content)
+        public BugReport AddReportBug(BugReport bugReport)
         {
-            var report = BugReport.Create(content);
-            BugReports.Add(report);
-            return report;
+            BugReports.Add(bugReport);
+            return bugReport;
         }
     }
 }

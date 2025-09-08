@@ -13,7 +13,7 @@ namespace VersionManager.Application.Mappers
         [MapperIgnoreSource(nameof(BugReport.VersionId))]
         [MapperIgnoreSource(nameof(BugReport.Version))]
         public static partial BugReportReadDto MapToReadDto(this BugReport bug);
-        public static BugReport MapToEntity(this BugReportCreateDto bug)
-            => BugReport.Create(bug.Content);
+        public static BugReport MapToEntity(this BugReportCreateDto bug, Guid idVersion)
+            => BugReport.Create(bug.Content, idVersion);
     }
 }
