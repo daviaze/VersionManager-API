@@ -1,4 +1,6 @@
-﻿using VersionManager.Domain.Enums;
+﻿using VersionManager.Domain.Constants;
+using VersionManager.Domain.Enums;
+using VersionManager.Domain.Exceptions;
 
 namespace VersionManager.Domain.Entities.VersionAggregate
 {
@@ -14,6 +16,11 @@ namespace VersionManager.Domain.Entities.VersionAggregate
                 Description = description,
                 CreatedAt = DateTime.UtcNow,
             };
+        }
+
+        public override void SendToRelease()
+        {
+            throw new DomainOperationException(CustomError.RELEASE_VERSION_SEND_TO_RELEASE);
         }
     }
 }

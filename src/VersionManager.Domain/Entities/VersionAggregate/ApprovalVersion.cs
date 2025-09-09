@@ -16,7 +16,7 @@ namespace VersionManager.Domain.Entities.VersionAggregate
                 CreatedAt = DateTime.UtcNow,
             };
         }
-        public void SendToRelease()
+        public override void SendToRelease()
         {
             AmbientVersion = AmbientVersion.release;
             UpdatedAt = DateTime.UtcNow;

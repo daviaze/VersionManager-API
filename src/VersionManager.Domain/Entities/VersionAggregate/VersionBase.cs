@@ -1,4 +1,5 @@
 ﻿using VersionManager.Domain.Enums;
+using VersionManager.Domain.Exceptions;
 
 namespace VersionManager.Domain.Entities.VersionAggregate
 {
@@ -20,6 +21,11 @@ namespace VersionManager.Domain.Entities.VersionAggregate
         {
             BugReports.Add(bugReport);
             return bugReport;
+        }
+
+        public virtual void SendToRelease()
+        {
+            throw new DomainOperationException("This method should be implemented in derived classes.");
         }
     }
 }
